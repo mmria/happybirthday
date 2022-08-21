@@ -62,6 +62,10 @@
 
 .your_beauty__image_img {
 	@extend %cover_img;
+
+	.your_beauty__image:nth-child(1) & {
+		transform: rotate(180deg);
+	}
 }
 
 .your_beauty__decors {
