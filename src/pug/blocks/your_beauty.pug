@@ -1,0 +1,16 @@
+section.section.your_beauty
+	.your_beauty__images
+		+loop_while(4)
+			+picture({
+				class: 'your_beauty__image yourBeautyPicture',
+				img_class: 'your_beauty__image_img',
+				img: `your_beauty/${i}.jpg`,
+			})
+	.your_beauty__decors
+		.your_beauty__decor.yourBeautyDecor
+			img.your_beauty__decor_img(src="images/flowers/rose_3.png")
+		.your_beauty__decor.yourBeautyDecor
+			img.your_beauty__decor_img(src="images/flowers/rose_4.png")
+	.your_beauty__title.section_title
+		p І щее, ти нереально гарна
+		p Залишайся такою ж квітучою і прекрасною 💔

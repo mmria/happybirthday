@@ -1,0 +1,104 @@
+.coming_out {
+	@extend %global_flex_block_row_wrap_center_center;
+
+	padding: 20em 4em 4em;
+	// background-color: $bg_light;
+
+	background-color: $black;
+
+	transition: background-color .4s ease-in-out;
+
+	&.active_state {
+		background-color: $bg_light;
+	}
+}
+
+.coming_out__decors {
+
+}
+
+.coming_out__decor {
+	// position: absolute;
+	// left: 0;
+	// bottom: 0;
+
+	// width: 45.5em;
+	// height: 36.2em;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 45.5em;
+	height: 36.2em;
+	transform: rotate(-41deg);
+	margin: -27% 0 0 -39%;
+
+	opacity: 0;
+
+	transition: opacity .4s ease-in-out;
+
+	.active_state & {
+		opacity: 1;
+	}
+}
+
+.coming_out__decor_img {
+	@extend %contain_img;
+}
+
+.coming_out__heart {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+
+	width: 21.4em;
+	height: 16em;
+	margin: 14% 0 0 16%;
+}
+
+.coming_out__heart_img {
+	@extend %contain_img;
+}
+
+.coming_out__heart_path {
+	transition: stroke .4s ease-in-out;
+
+	.active_state & {
+		stroke: $cacao;
+	}
+}
+
+.coming_out__content {
+	max-width: 140em;
+	width: 100%;
+}
+
+.coming_out__title {
+	font-size: 5.4em;
+	text-align: center;
+	// color: $cacao;
+	text-shadow: unset;
+
+	transition: color .4s ease-in-out;
+
+	.active_state & {
+		color: $cacao;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: (13.4em / 5.4);
+	}
+}
+
+.coming_out__subtitle {
+	text-align: center;
+	font-size: 4.4em;
+	text-shadow: unset;
+	// color: $cacao;
+
+	transition: color .4s ease-in-out;
+
+	.active_state & {
+		color: $cacao;
+	}
+}

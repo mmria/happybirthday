@@ -3,5 +3,19 @@ extends ../layout/_layout
 block vars
 	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'Index', template_name: 'IndexPage'}
 block content_block
-	section.section.index_section.demo_mod
-		h1.section_title Hola #[a.test(href='https://glivera-team.com/') Maketodor] :)
+	.scroll_wrap.scrollWrap
+		include ../blocks/greeting
+		include ../blocks/traveling
+		include ../blocks/long_way
+		+video_section({
+			video: 'images/video_section_2.mp4',
+			title: 'Живи повним життям, <p>    та насолоджуйся кожною миттю</p>'
+		})
+		+video_section({
+			video: 'images/video_section_1.mp4',
+			title: 'Купи колись байк, та покатай мене) Але не швидко))'
+		})
+		include ../blocks/your_beauty
+
+		include ../blocks/coming_out
+

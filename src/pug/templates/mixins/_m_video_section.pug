@@ -1,0 +1,4 @@
+mixin video_section(data)
+	section.section.video_section
+		video.video_section__bg(src=data.video autoplay loop playisinline muted preload='metadata')
+		.video_section__title.section_title!= data.title

@@ -1,6 +1,7 @@
 //---------------------------------------------fonts
 $font_path: "../fonts/";
-$font_1: 'RobotoCondensed', sans-serif;
+$font_1: 'Caveat', sans-serif;
+$font_2: 'CaveatBrush', sans-serif;
 $font_size_base: 1.6rem;
 //---------------------------------------------fonts###
 
@@ -8,9 +9,13 @@ $font_size_base: 1.6rem;
 $white: #fff;
 $black: #000;
 
+$bg_light: #FAF2F2;
+$cacao: #3D1515;
+$bg_dark: #111010;
+
 $color_text_base: $black;
 $color_link_base:#4aa3df;
-$body_bg: $white;
+$body_bg: $black;
 //---------------------------------------------colors###
 
 //---------------------------------------------z-index

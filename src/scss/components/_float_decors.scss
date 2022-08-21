@@ -1,0 +1,33 @@
+.float_decors {
+
+}
+
+.float_decors__image {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+
+	width: 20em;
+	height: 18.4em;
+
+	&:nth-child(1) {
+		margin: 12% 0 0 -21%;
+	}
+
+	&:nth-child(2) {
+		margin: -5% 0 0 36%;
+	}
+
+	&:nth-child(3) {
+		margin: -21% 0 0 20%;
+	}
+
+	&:nth-child(4) {
+		margin: -18% 0 0 -10%;
+	}
+
+}
+
+.float_decors__image_in {
+	@extend %contain_img;
+}

@@ -31,6 +31,7 @@ export default class App {
 
 	init() {
 		const initLayout = new Layout();
+		// scrollProxy();
 		setTimeout(() => {
 			this.importPage();
 		}, 0);

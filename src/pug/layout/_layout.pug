@@ -5,7 +5,7 @@ include ../templates/mixins/_m_footer
 
 //- It is commented for optimization reasons
 //- include ../templates/_project_vars
-//- include ../templates/_project_mixins
+include ../templates/_project_mixins
 
 block vars
 block project_vars
@@ -15,9 +15,15 @@ html(lang="en" data-template-name= array.template_name)
 	head
 		+head(array)
 	body(class= array.body_class)
-		+header
+		//- +header
+		.audio
+		.preloader
+			.preloader_form
+				label.label Введіть пароль
+				input.input(type='text')
+				button.button(type='button') Продовжити
 		.wrapper(class= array.layout_mod)
 			.base(class= array.layout_mod)
 				block content_block
-			+footer
-		block local_popup
+			//- +footer
+		//- block local_popup

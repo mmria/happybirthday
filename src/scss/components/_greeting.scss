@@ -1,0 +1,59 @@
+.greeting {
+	@extend %global_flex_block_row_wrap_center_center;
+
+	background-color: $bg_light;
+
+	padding: 15em var(--gl-indent) 4em;
+}
+
+.greeting__decors {
+
+}
+
+.greeting__decor {
+	position: absolute;
+
+	&:nth-child(1) {
+		left: 50%;
+		top: 50%;
+
+		width: 40em;
+		height: 39.6em;
+		margin: -22% 0 0 -43%;
+	}
+
+	&:nth-child(2) {
+		left: 6.6em;
+		bottom: 0;
+
+		width: 20.8em;
+		height: 24.4em;
+	}
+}
+
+.greeting__decor_in {
+	@extend %contain_img;
+}
+
+.greeting__content {
+	max-width: 135em;
+	width: 100%;
+}
+
+.greeting__title {
+	text-align: center;
+	max-width: (102.2em / 4.4);
+	margin: 0 auto;
+	color: $cacao;
+	text-shadow: unset;
+
+	&:not(:last-child) {
+		margin-bottom: (6em / 4.4);
+	}
+}
+
+.greeting__subtitle {
+	text-align: right;
+	color: $cacao;
+	text-shadow: unset;
+}

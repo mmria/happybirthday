@@ -1,0 +1,41 @@
+.video_section {
+	@extend %global_flex_block_row_wrap_flex-start_flex-end;
+	padding: 7em 8em;
+
+	&::after {
+		position: absolute;
+		left: -1px;
+		top: 0;
+
+		width: 100%;
+		height: 100%;
+
+		content: '';
+
+		transition: opacity .6s ease-in-out;
+		background: linear-gradient(to right, $bg_dark 0%, rgba(255, 255, 255, 0) 100%);
+	}
+
+	&.section--active_slide_state {
+		&::after {
+			transition: opacity .6s ease-in-out .6s;
+			opacity: 0;
+		}
+	}
+}
+
+.video_section__bg {
+	z-index: -1;
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+}
+
+.video_section__title {
+
+}
